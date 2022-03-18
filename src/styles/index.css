@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+html {
+    line-height: 1.15;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "RocknRoll One", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > span {
+    color: gray;
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    gap: 15px;
+}
+
+.wrapper h1 {
+    text-shadow: 1px 1px 2px black;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid rgb(75, 55, 255);
+    background: none;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+input::placeholder {
+    text-align: center;
+    color: rgb(170, 196, 248);
+    font-weight: 600;
+}
+
+.enter {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(165, 233, 64);
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+}
+
+.note {
+    position: absolute;
+    cursor: move;
+    width: 215px;
+    color: black;
+    padding: 1em;
+    border-radius: 5px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.delete {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: red;
+    font-weight: 900;
+    right: -0px;
+    top: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
